@@ -9,12 +9,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #EEEEEE;
+    overflow-x: hidden;
 }
 
 nav {
     position: fixed;
-    top: 0; 
-    left: 0; 
+    top: 0;
+    left: 0;
     right: 0;
     z-index: 1000;
     background-color: #fff;
@@ -64,7 +65,7 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no repeat;
-    height: 27rem;
+    height: 25.25rem;
 }
 
 .content {
@@ -73,12 +74,14 @@ nav {
     padding-top: 165px;
 }
 
-.heading, .top-heading {
+.heading,
+.top-heading {
     color: #130F40;
     font-weight: 600;
     font-size: 2rem;
 }
-.top-heading{
+
+.top-heading {
     padding-bottom: 10px;
 }
 
@@ -89,11 +92,11 @@ nav {
 
 .sub-head {
     color: #717371;
-    max-width: 1000px;
+    max-width: 1140px;
     margin: 0 auto;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .transparent-btn {
@@ -108,7 +111,7 @@ nav {
 .transparent-btn:hover {
     background-color: #FF7800;
     color: #fff;
-    transition: all .5s ease;
+    transition: all ease;
 }
 
 .section-two {
@@ -133,7 +136,8 @@ nav {
     margin-left: auto;
     margin-right: auto;
 }
-.second-img{
+
+.second-img {
     height: 107.65px;
     width: 70%;
 }
@@ -169,7 +173,8 @@ nav {
 .features-section .description {
     color: #717371;
 }
-.cart{
+
+.cart {
     display: none;
     background-color: #fff;
     border-radius: 10px;
@@ -179,25 +184,30 @@ nav {
     margin-top: 6px;
     box-shadow: 0px 1px 12px #FFFFFF;
 }
-.cart .flex{
+
+.cart .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.item{
+
+.item {
     color: #130F40;
     font-size: 18px;
     font-weight: 600;
 }
-.description{
+
+.description {
     color: #717371;
     font-size: 16px;
 }
-.cart img{
+
+.cart img {
     width: 100%;
     object-fit: cover;
     height: auto;
 }
+
 .fa-trash {
     padding-top: 15px;
     width: 50px;
@@ -206,6 +216,38 @@ nav {
     color: #757575;
     cursor: pointer;
 }
+
+@media screen and (min-width: 200px) and (max-width:280px) {
+    .banner {
+        height: 32.75rem;
+    }
+
+    .top-heading {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .logo {
+        font-size: .875rem;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .fa-search,
+    .fa-shopping-cart,
+    .fa-user {
+        width: 20px;
+        height: 20px;
+        background: none;
+    }
+
+    .nav-links {
+        column-gap: 10px;
+    }
+}
+
 
 @media screen and (max-width: 540px) {
     .features-section {
@@ -216,17 +258,21 @@ nav {
         width: 100%;
         margin-bottom: 15px;
     }
-    .features-section .heading{
+
+    .features-section .heading {
         font-size: 1rem;
     }
-    .text{
+
+    .text {
         font-size: 13px;
     }
-    .transparent-btn{
+
+    .transparent-btn {
         font-size: .875rem;
     }
+
     .content {
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .heading {
@@ -243,58 +289,90 @@ nav {
         font-size: 15px;
         padding-top: 10px;
     }
-    .banner{
+
+    .banner {
         padding-top: 50px;
     }
 }
 
 @media screen and (min-width:545px) and (max-width: 600px) {
     .content {
-        padding-top: 65px;
+        padding-top: 85px;
     }
-    .heading{
+
+    .fa-search,
+    .fa-shopping-cart,
+    .fa-user {
+        font-weight: 800;
+        background-color: #EEEEEE;
+        color: #130F40;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .heading {
         font-size: 1.5rem;
     }
-    .banner{
+
+    .banner {
         padding-top: 20px;
         height: 20.25rem;
     }
-    nav{
+
+    nav {
         padding: 10px 50px;
     }
-    .features-section{
+
+    .features-section {
         display: block;
     }
-    .features-section .bg-white{
+
+    .features-section .bg-white {
         width: 90%;
         margin-bottom: 15px;
     }
-    .sub-head{
+
+    .sub-head {
         font-size: 13px;
         padding: 25px 0px;
     }
 }
-@media screen and (min-width:601px) and (max-width: 768px){
-    .features-section{
+
+@media screen and (min-width:601px) and (max-width: 768px) {
+    .features-section {
         width: 90%;
     }
-    .features-section .bg-white{
+
+    .features-section .bg-white {
         width: 70%;
     }
-    .features-section .heading{
+
+    .features-section .heading {
         font-size: 1rem;
     }
-    .features-section .text{
+
+    .features-section .text {
         font-size: 13px;
     }
-    .transparent-btn{
+
+    .transparent-btn {
         font-size: .875rem;
     }
-    .sub-head{
+
+    .sub-head {
         max-width: 620px;
     }
-    .heading{
+
+    .heading {
         font-size: 1.75rem;
     }
+
+    .banner {
+        height: 25.25rem;
+    }
+
 
 }
